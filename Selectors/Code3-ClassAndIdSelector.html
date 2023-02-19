@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <p class="type-class-selector">An Example for Simple Class Selector</p>
+      <style>
+        .type-class-selector {
+          background-color: red;
+        }
+      </style>
+    </div>
+
+    <div>
+      <p id="type-id-selector">An Example for Simple Id Selector</p>
+      <style>
+        #type-id-selector {
+          background-color: blue;
+        }
+      </style>
+    </div>
+
+    <div>
+      <p id="type-id-selector" class="type-class-selector">
+        An Example using both Id and class Selector
+      </p>
+      <style>
+        #type-id-selector.type-class-selector {
+          background-color: yellow;
+        }
+      </style>
+    </div>
+
+    <div>
+      <p class="type-class1-selector type-class2-selector">
+        An Example using Multiple Class Selector
+      </p>
+      <style>
+        .type-class1-selector.type-class2-selector {
+          background-color: orange;
+        }
+      </style>
+    </div>
+
+    <div class="type-div-class-selector">
+      <p class="type-p1-class-selector">An Example for Simple Class Selector</p>
+      <p class="type-p2-class-selector">An Example for Simple Class Selector</p>
+      <style>
+        .type-div-class-selector .type-p2-class-selector {
+          background-color: green;
+        }
+      </style>
+    </div>
+
+    <div class="type-div-class-selector">
+      <p class="type-p3-class-selector">An Example for Simple Class Selector</p>
+      <p class="type-p4-class-selector">An Example for Simple Class Selector</p>
+      <style>
+        .type-div-class-selector .type-p3-class-selector,
+        .type-div-class-selector .type-p4-class-selector {
+          background-color: grey;
+        }
+      </style>
+    </div>
+
+  </body>
+</html>
